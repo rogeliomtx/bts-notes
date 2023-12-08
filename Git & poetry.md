@@ -112,7 +112,18 @@ poetry shell
 exit
 ```
 
-**Activate the virtual environment**
+**Run Fast API in development mode (with hot reload)**
 ```
+poetry shell
+
+cd bdi_api
 uvicorn app:app --reload
+```
+
+**Run Fast API prod (probably)**
+```
+poetry shell
+
+cd bdi_api
+python bdi_api/app.py
 ```
